@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 
+
 class WebScraper:
     def __init__(self, search_query):
         self.search_query = search_query
@@ -125,7 +126,8 @@ class UserInterface:
 web_scraper = WebScraper(search_query="Python programming")
 information_aggregator = InformationAggregator()
 dependency_manager = DependencyManager()
-natural_language_processor = NaturalLanguageProcessor(text="This is a sample text.")
+natural_language_processor = NaturalLanguageProcessor(
+    text="This is a sample text.")
 automated_decision_maker = AutomatedDecisionMaker(data=[1, 2, 3])
 user_interface = UserInterface()
 
